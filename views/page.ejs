@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	</head>
+	<body>
+
+	<div class="ui main text container">
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+			<% vaccs.forEach(function(vacc){ %>
+			<div class="ui horizontal segments">
+				<div class="ui segment">
+				  <a class="header" href="/page/<%= vacc._id %>"><%= vacc._id %></a>
+				</div>
+  			</div>
+          <% }) %>
+			
+		</div>
+	</div>
+</div>
+	</body>
+</html>

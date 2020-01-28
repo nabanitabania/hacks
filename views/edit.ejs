@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	</head>
+	<body>
+
+	<div class="ui container segment" >
+		<div class="ui huge header">
+			Create Vacination
+		</div>
+	<form class="ui form" action="/page/<%= vacc._id %>?_method=PUT" method="POST">
+			
+			<div class="ui segments">
+				<div class="ui segment">
+				  <p class="header">24 hours</p>
+				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.hour.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[hour.check]" value="True"/>	
+					</div>
+  				</div>
+			</div>
+			
+			<div class="ui segments">
+				<div class="ui segment">
+				  <p class="header">2 months</p>
+				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v1.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[month1.v1.check]" value="True"/>	
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v2.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[month1.v2.check]" value="True"/>	
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v3.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[month1.v3.check]" value="True"/>	
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v4.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[month1.v4.check]" value="True"/>	
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v5.name %></p>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="vacc[month1.v5.check]" value="True"/>	
+					</div>
+  				</div>
+			</div>
+			<input class="ui violet basic button big" type="submit">
+		</form>
+	</div>
+	</body>
+</html>

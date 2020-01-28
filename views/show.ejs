@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	</head>
+	<body>
+
+	<div class="ui main text container">
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+			<div class="ui segments">
+				<div class="ui segment">
+				  <p class="header">24 hours</p>
+				</div>
+				<div class="ui horizontal segments">
+				<div class="ui segment">
+				  <p class="header"><%= vacc.hour.name %></p>
+				</div>
+				<div class="ui segment">
+				  <p class="header"><%= vacc.hour.check %></p>
+				</div>
+  				</div>
+			</div>
+			
+			<div class="ui segments">
+				<div class="ui segment">
+				  <p class="header">2 months</p>
+				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v1.name %></p>
+					</div>
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v1.check %></p>
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v2.name %></p>
+					</div>
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v2.check %></p>
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v3.name %></p>
+					</div>
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v3.check %></p>
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v4.name %></p>
+					</div>
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v4.check %></p>
+					</div>
+  				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v5.name %></p>
+					</div>
+					<div class="ui segment">
+					  <p class="header"><%= vacc.month1.v5.check %></p>
+					</div>
+  				</div>
+			</div>
+			<a href="/page/<%= vacc._id %>/edit" class="ui yellow basic button">Update</a>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
